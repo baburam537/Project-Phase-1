@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Properties - Owner</title>
+  <link rel="stylesheet" href="bookaspace.css">
+</head>
+<body>
+  
+  <header class="navbar">
+    <div class="logo">BookaSpace</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="register.html">Register</a>
+      <a href="login.html">Login</a>
+      <a href="bookaspace-coworker.html">Coworker</a>
+      <a href="bookaspace-owner.html" class="active">Owner</a>
+      <a href="mybooking.html">My Booking</a>
+      <button class="join-btn">Book Now</button>
+    </nav>
+  </header>
+
+  <main class="form-container">
+    <h2>Owner - Add Property</h2>
+   
+   <!-- Owner Property Form -->
+<form id="ownerPropertyForm">
+  <input type="text" id="address" name="address" placeholder="Address" required />
+  <input type="text" id="neighborhood" name="neighborhood" placeholder="Neighborhood" />
+  <input type="number" id="sqft" name="sqft" placeholder="Square Footage" />
+  <label><input type="checkbox" id="garage" name="garage" /> Garage</label>
+  <label><input type="checkbox" id="publicTransport" name="publicTransport" /> Accessible by Public Transport</label>
+  <button type="submit">Add Property</button>
+</form>
+
+<!-- Owner Workspace Form -->
+<form id="ownerWorkspaceForm">
+  <select id="propertySelect" required></select>
+  <label><input type="checkbox" id="meetingRoom" name="meetingRoom" /> Meeting Room</label>
+  <label><input type="checkbox" id="privateOffice" name="privateOffice" /> Private Office</label>
+  <label><input type="checkbox" id="openDesk" name="openDesk" /> Open Desk</label>
+  <input type="number" id="seats" name="seats" placeholder="Seats" required />
+  <label><input type="checkbox" id="smoking" name="smoking" /> Smoking Allowed</label>
+  <select id="availability" name="availability" required>
+    <option value="Available">Available</option>
+    <option value="Unavailable">Unavailable</option>
+  </select>
+  <select id="term" name="term" required>
+    <option value="d">Day</option>
+    <option value="w">Week</option>
+    <option value="m">Month</option>
+  </select>
+  <input type="number" step="0.01" id="price" name="price" placeholder="Price" required />
+  <button type="submit">Add Workspace</button>
+</form>
+
+
+    <h2>Your Properties & Workspaces</h2>
+    <div id="ownerListings"></div>
+  </main>
+
+
+  <footer class="footer">
+    <div class="footer-left">
+      <strong>BookaSpace</strong>
+      <p>Where work meets convenience</p>
+    </div>
+    <div class="footer-links">
+      <a href="#">Desk</a>
+      <a href="#">Conference Room</a>
+      <a href="#">Office</a>
+      <a href="#">Contact Us</a>
+      <a href="#">Learn More</a>
+    </div>
+    <div class="footer-bottom">BookaSpace © 2025. All rights reserved.</div>
+  </footer>
+
+  <script src="bookaspace-owner.js"></script>
+</body>
+</html>

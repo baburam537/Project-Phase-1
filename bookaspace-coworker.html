@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Book a Space - Coworker</title>
+  <link rel="stylesheet" href="bookaspace.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">BookaSpace</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="register.html">Register</a>
+      <a href="login.html">Login</a>
+      <a href="bookaspace-coworker.html" class="active">Coworker</a>
+      <a href="bookaspace-owner.html">Owner</a>
+      <a href="mybooking.html">My Booking</a>
+      <button class="join-btn">Book Now</button>
+    </nav>
+  </header>
+
+  <main class="form-container">
+    <h2>Find & Book a Workspace</h2>
+   <form id="coworkerSearchForm">
+  <input type="text" id="address" name="address" placeholder="Address" />
+  <input type="text" id="neighborhood" name="neighborhood" placeholder="Neighborhood" />
+  <input type="number" id="sqft" name="sqft" placeholder="Minimum Square Footage" min="0" />
+  
+  <label><input type="checkbox" id="garage" name="garage" /> Garage</label>
+  <label><input type="checkbox" id="publicTransport" name="publicTransport" /> Accessible by Public Transport</label>
+  
+  <input type="number" id="seats" name="seats" placeholder="Minimum Seats" min="0" />
+  <label><input type="checkbox" id="smoking" name="smoking" /> Smoking Allowed</label>
+  
+  <select id="availability" name="availability">
+    <option value="">Any Availability</option>
+    <option value="Available">Available</option>
+    <option value="Unavailable">Unavailable</option>
+  </select>
+  
+  <select id="term" name="term">
+    <option value="">Any Term</option>
+    <option value="d">Day</option>
+    <option value="w">Week</option>
+    <option value="m">Month</option>
+  </select>
+  
+  <input type="number" id="priceMax" name="priceMax" placeholder="Max Price" step="0.01" min="0" />
+  
+  <button type="submit">Search</button>
+</form>
+
+<div id="searchResults"></div>
+
+  </main>
+
+  
+  <footer class="footer">
+    <div class="footer-left">
+      <strong>BookaSpace</strong>
+      <p>Where work meets convenience</p>
+    </div>
+    <div class="footer-links">
+      <a href="#">Desk</a>
+      <a href="#">Conference Room</a>
+      <a href="#">Office</a>
+      <a href="#">Contact Us</a>
+      <a href="#">Learn More</a>
+    </div>
+    <div class="footer-bottom">BookaSpace © 2025. All rights reserved.</div>
+  </footer>
+
+  <script src="coworker.js"></script>
+</body>
+</html>
+
