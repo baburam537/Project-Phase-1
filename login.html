@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log In - BookaSpace</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js" defer></script>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">BookaDesk</div>
+        <nav>
+          <a href="index.html">Home</a>
+      <a href="register.html">Register</a>
+      <a href="login.html">Login</a>
+      <a href="bookaspace-coworker.html">Coworker</a>
+      <a href="bookaspace-owner.html" class="active">Owner</a>
+      <a href="mybooking.html">My Booking</a>
+      <button class="join-btn" onclick="window.location.href='bookaspace.html'">Book Now</button>
+        </nav>
+    </header>
+    <main class="login-container">
+        <h2>Log In</h2>
+         <form id="loginForm" class="login-form">
+  <label>Email Address</label>
+  <input type="email" id="username" placeholder="you@example.com" required />
+
+  <label>Password</label>
+  <div class="password-wrapper">
+    <input type="password" id="password" placeholder="********" required />
+    <i class="fas fa-eye toggle-password" id="togglePassword"></i>
+  </div>
+  <small>It must be a combination of minimum 8 letters, numbers, and symbols.</small>
+
+  <div class="form-options">
+    <label><input type="checkbox" /> Remember me</label>
+    <a href="#">Forgot Password?</a>
+  </div>
+
+  <button class="login-btn" type="submit">Log In</button>
+  <p id="loginMessage"></p>
+
+  <div class="social-login">
+    <button class="google" type="button"><i class="fab fa-google"></i> Log in with Google</button>
+    <button class="apple" type="button"><i class="fab fa-apple"></i> Log in with Apple</button>
+  </div>
+</form>
+        <p class="signup-link">No account yet? <a href="#">Sign Up</a></p>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-left">
+            <strong>BookaDesk</strong><br>
+            <p>Where work meets convenience</p>
+        </div>
+        <div class="footer-links">
+            <a href="#">Desk</a>
+            <a href="#">Conference Room</a>
+            <a href="#">Office</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Learn More</a>
+        </div>
+        <div class="footer-bottom">BookaSpace © 2025. All rights reserved.</div>
+    </footer>
+</body>
+
+</html>

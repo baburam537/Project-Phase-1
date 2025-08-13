@@ -1,0 +1,195 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #f5f7fa;
+  color: #333;
+}
+
+.navbar {
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1f2937;
+  color: white;
+
+}
+
+.navbar .logo {
+  font-weight: bold;
+  font-size: 24px;
+
+}
+
+.navbar nav {
+  align-items: center;
+  gap: 20px;
+  display: flex;
+
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.navbar a:hover,
+.navbar .map-icon:hover {
+  text-decoration: underline;
+}
+
+.navbar .map-icon {
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.navbar .join-btn {
+  margin-left: 20px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: skyblue;
+  color: white;
+
+}
+
+.navbar .join-btn:hover {
+  background-color: skyblue;
+
+}
+
+.login-container {
+  max-width: 400px;
+  margin: 3rem auto;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background: white;
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.login-form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-form small {
+  font-size: 0.75rem;
+  color: #333;
+}
+
+.form-options {
+  align-items: center;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.login-btn {
+
+  font-weight: bold;
+  border: none;
+  width: 100%;
+  padding: 0.8rem;
+  background-color: skyblue;
+  color: white;
+
+  margin-top: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.social-login {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.social-login button {
+  flex: 1;
+  margin: 0 0.5rem;
+  padding: 0.6rem;
+  font-weight: bold;
+  border-radius: 4px;
+
+  cursor: pointer;
+  border: 1px solid skyblue;
+  background-color: white;
+  color: skyblue;
+}
+
+.social-login i {
+  margin-right: 0.5rem;
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.signup-link a {
+  color: skyblue;
+  text-decoration: none;
+}
+.password-wrapper {
+  position: relative;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding-right: 35px;
+}
+
+.toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: gray;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-left {
+  text-align: left;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  margin-top: 1rem;
+  font-size: 0.75rem;
+  color: #aaa;
+}
